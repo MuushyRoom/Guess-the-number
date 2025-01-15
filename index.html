@@ -5,16 +5,39 @@
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”> 
     <link rel="stylesheet" href="styles/styles.css">
     <title>Guess the Number</title>
+    
 </head>
 <body> 
   
         <div class="center">
         <div class="main-box">
             <h1>Guess the number!</h1>    
-            <p>####</p>
-            <input type="text">
-            <button>Guess</button>
-            
+            <p>Guess between 1 to <span id="rangeInstructions"></span></p>
+            <input type="range" onchange="isChanged()" min="1" max="100" value="50" class="slider" id="Range">
+ 
+    <br>
+
+    <script>
+let slider = document.getElementById("Range");
+
+  
+let output2 = document.getElementById("rangeInstructions");
+
+output2.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output2.innerHTML = this.value;  
+}
+
+    </script>
+    
+    
+            <br>
+            <input type="text" id="guessInput" autocomplete="off">
+            <button onclick="getRand();">
+            Check</button>
+            <script src="scripts/scripts.js"></script>  
+          
         </div> 
    
     </div>

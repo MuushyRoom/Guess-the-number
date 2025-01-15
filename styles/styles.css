@@ -12,7 +12,7 @@ body {
 
 
 .center{
-    margin-top: 15%;
+    margin-top: 10%;
   display: flex;
   justify-content: center;
 }
@@ -32,7 +32,7 @@ body {
   background-color: #685752;
   justify-items: center;
   border:2px solid #fdf7f4;
-  padding: 30px 40px;
+  padding: 40px 40px;
  
 }
 .main-box button{
@@ -40,25 +40,33 @@ body {
     color: #fdf7f4;
     background-color: #685752;
     display: block;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
     border-radius: 10px;
+    padding: 10px 50px;
     border: 2px solid #8eb486;
 }
-.main-box input{
+.main-box #guessInput{
+  
+  text-align: center;
     color: #685752;
     background-color: #fdf7f4;
     display: block;
-    font-size: 25px;
-    margin-top: 20px;
-    border: 2px solid #8eb486;
+    width:40%;
+    font-size: 20px;
+   padding-top: 10px;
+   padding-bottom:10px;
+   padding-left: auto;
+
+   padding-right: auto;
+    border: 3px solid #8eb486;
    
 }
 .main-box h1,p {
   color: #fdf7f4;
 }
-.main-box p {
+.main-box p{
     font-size: 20px;
-    padding: 20px;
-    border: 2px solid #8eb486;
+    padding: 10px;
+   
 }
