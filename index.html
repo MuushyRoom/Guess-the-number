@@ -13,27 +13,24 @@
         <div class="main-box">
             <h1>Guess the number!</h1>    
             <p>Guess between 1 to <span id="rangeInstructions"></span></p>
-            <input type="range" onchange="isChanged()" min="1" max="100" value="50" class="slider" id="Range">
+            <input type="range" onchange="isChanged()" min="2" max="100" value="50" class="slider" id="Range">
  
     <br>
-
     <script>
 let slider = document.getElementById("Range");
+let output = document.getElementById("rangeInstructions");
 
-  
-let output2 = document.getElementById("rangeInstructions");
-
-output2.innerHTML = slider.value;
+output.innerHTML = slider.value;
 
 slider.oninput = function() {
-  output2.innerHTML = this.value;  
+  output.innerHTML = this.value;  
 }
 
     </script>
     
     
             <br>
-            <input type="text" id="guessInput" autocomplete="off">
+            <input type="text" id="guessInput" autocomplete="off" placeholder="50">
             <button onclick="getRand();">
             Check</button>
             <script src="scripts/scripts.js"></script>  
