@@ -1,8 +1,8 @@
 
 body {
-  background-color: #8eb486;
+  background-color: #ad795b;
   display: flex;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
  justify-content: center;
  justify-items: center;
  margin: 0;
@@ -10,41 +10,51 @@ body {
  padding: 0;
 }
 
-
+p{
+  font-size: 20px;
+ 
+}
 .center{
     margin-top: 10%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  background-color: #685752;
+  border-radius: 4px;
+  border: 5px solid white;
+  width:70%;
+  height: 100%;
 }
 
 .item {
   width: 100px;
 }
 
-
-.main-box,p,input{
-
+.main-title {
+  font-size: 40px;
+}
+p,input{
+font-size: 25px;
     border-radius: 10px;
 }
 .main-box{ 
- 
+  width: auto;
+  height: auto;
   text-align: center;
   background-color: #685752;
   justify-items: center;
-  border:2px solid #fdf7f4;
-  padding: 40px 40px;
- 
+  padding: 80px 0;
+ flex: 1;
 }
 .main-box button{
    
-    color: #fdf7f4;
-    background-color: #685752;
+    color: #000000;
+    background-color: #ffffff;
     display: block;
     font-size: 25px;
     margin-top: 20px;
     border-radius: 10px;
     padding: 10px 50px;
-    border: 2px solid #8eb486;
+    border: 2px solid #2b1511;
 }
 .main-box #guessInput{
   
@@ -54,19 +64,59 @@ body {
     display: block;
     width:40%;
     font-size: 20px;
-   padding-top: 10px;
-   padding-bottom:10px;
-   padding-left: auto;
+   padding: 5px 25px;
 
+   padding-left: auto;
+   border: 2px solid #2b1511;
    padding-right: auto;
-    border: 3px solid #8eb486;
-   
+
 }
+.slider{
+  width:100%;
+  margin: 0;
+  -webkit-appearance: none;
+ border-radius: 0%;
+  border: 1px solid black;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width:15px;
+  height: 20px;
+  background: #000000;
+
+  
+  cursor: pointer;
+}
+
 .main-box h1,p {
   color: #fdf7f4;
 }
-.main-box p{
-    font-size: 20px;
-    padding: 10px;
-   
+
+
+.second-box{
+  padding: auto;
+  width: 80%;
+  height: auto;
+
+margin:20px 30px;
+
+   background-color: #c2b19c;
+   padding: 50px 5px;
+   display: flex;
+   flex-direction: column;
+            justify-content: center;
+            align-items: center;
+   flex: 1;
+   border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+ text-align: center;
+}
+.second-box p {
+  font-size: 30px;
+  color:black;
+  margin: auto;
+  padding: auto;
+  
 }

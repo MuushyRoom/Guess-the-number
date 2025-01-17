@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”> 
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="”viewport”"
+      content="”width"
+      ="device-width,"
+      initial-scale="1.0”"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Guess the Number</title>
-    
-</head>
-<body> 
-  
-        <div class="center">
-        <div class="main-box">
-            <h1>Guess the number!</h1>    
-            <p>Guess between 1 to <span id="rangeInstructions"></span></p>
-            <input type="range" onchange="isChanged()" min="2" max="100" value="50" class="slider" id="Range">
- 
-    <br>
-    <script>
-let slider = document.getElementById("Range");
-let output = document.getElementById("rangeInstructions");
+  </head>
+  <body>
+    <div class="center">
+      <div class="main-box">
+        <h1 class="main-title">Guess the number!</h1>
+        <p>Guess between 1 to <span id="rangeInstructions"></span></p>
+        <input
+          type="range"
+          onchange="isChanged()"
+          min="2"
+          max="100"
+          value="50"
+          class="slider"
+          id="Range"
+        />
 
-output.innerHTML = slider.value;
+        <br />
+        <script>
+          let slider = document.getElementById("Range");
+          let output = document.getElementById("rangeInstructions");
 
-slider.oninput = function() {
-  output.innerHTML = this.value;  
-}
+          output.innerHTML = slider.value;
 
-    </script>
-    
-    
-            <br>
-            <input type="text" id="guessInput" autocomplete="off" placeholder="50">
-            <button onclick="getRand();">
-            Check</button>
-            <script src="scripts/scripts.js"></script>  
-          
-        </div> 
-   
+          slider.oninput = function () {
+            output.innerHTML = this.value;
+          };
+        </script>
+
+        <br />
+        <input
+          type="text"
+          id="guessInput"
+          autocomplete="off"
+          placeholder="1"
+          class="text-area"
+        />
+        <button onclick="getRand();">Check</button>
+        <script src="scripts/scripts.js"></script>
+      </div>
+      <div class="second-box">
+        <p id="results">
+            Welcome to the "Guess the Number" <br>
+            - Try to guess the number between 1 and your desired range.<br>
+             - Enter your guess in the input box below <br>
+             - click "Check" to see if you're correct. <br>
+             - use the slider input for custom ranges!
+        </p>
+       
+        <br><br>
+        <p id="results1">
+       
+          </p>
+      </div>
     </div>
-    
-    
-</body>
+  </body>
 </html>
