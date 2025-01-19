@@ -2,14 +2,21 @@
 body {
   background-color: #ad795b;
   display: flex;
-  font-family: "Comic Sans MS", "Comic Sans", regular;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  justify-content: center;
  justify-items: center;
  margin: 0;
- 
+
  padding: 0;
 }
+/*
 
+
+* {
+  border: 1px solid red;
+}
+
+*/
 p{
   font-size: 20px;
  
@@ -21,8 +28,9 @@ p{
   background-color: #685752;
   border-radius: 4px;
   border: 5px solid rgb(255, 255, 255);
-  width:70%;
+  width:90%;
   height: 100%;
+
 }
 
 .item {
@@ -42,8 +50,8 @@ font-size: 25px;
   text-align: center;
   background-color: #685752;
   justify-items: center;
-  padding: 80px 0;
- flex: 1;
+  padding: 90px 0px;
+flex:30%;
 }
 .main-box button{
    
@@ -96,27 +104,38 @@ font-size: 25px;
 
 
 .second-box{
-  padding: auto;
-  width: 80%;
+ 
+
   height: auto;
 
-margin:20px 30px;
+  margin: 1%;
+
 
    background-color: #c2b19c;
-   padding: 50px 5px;
+  
    display: flex;
    flex-direction: column;
             justify-content: center;
             align-items: center;
-   flex: 1;
+            flex:50%;
    border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
  text-align: center;
+
+ color: #000000;
 }
-.second-box p {
+
+.second-box p{
+  font-size: 30px;
+color: #000000;
+margin-top: -30px ;
+}
+
+
+.second-box #results1 {
   font-size: 30px;
   color:black;
-  margin: auto;
-  padding: auto;
+  margin: -10px;
+  
   
 }
