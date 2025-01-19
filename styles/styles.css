@@ -2,7 +2,7 @@
 body {
   background-color: #ad795b;
   display: flex;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", regular;
  justify-content: center;
  justify-items: center;
  margin: 0;
